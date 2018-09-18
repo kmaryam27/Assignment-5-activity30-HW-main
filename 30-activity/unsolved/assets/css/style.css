@@ -1,0 +1,190 @@
+/* programmer: Maryam Keshavarz Date: 8/17/2018*/
+body{
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;  
+}
+
+/*------------content section style---------------*/
+#contentPage{
+    grid-area: 1 / 2 / span 1 / span 1;
+    background-image: url('../img/bckg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    overflow-y: auto;
+    margin: 15px;
+    margin-left: 35px;
+   
+}
+#mainContent{
+    
+    display: grid;
+    min-height: 100vh;
+    height: auto;
+    grid-template-rows: 70px 1fr;
+    grid-template-columns: 1fr;
+    
+}
+
+/*------------header section style---------------*/
+header{
+    grid-area: 1 / 1 / span 1 / span 1;
+    background-color: rgb(98, 98, 218);
+    width: 100%;
+    height: 70px;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    float: right;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-right: 15px;
+    color: white;
+}
+
+
+/*------------aside section style---------------*/
+ aside{
+    grid-area: 1 / 1 / span 1 / span 1;
+    display: grid;
+    height: 100%;
+    position: fixed;
+    overflow-x: hidden;
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(3, 1fr);
+    padding-top: 15px;
+    color: white;
+    background-color: gray;
+}
+
+#asideLinkSection {
+    grid-area: 2 / 1 / span 1 / span 1;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(8, 1fr); 
+    padding-left: 15px;
+}
+
+#asideLinkSection div{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+#asideIconSection{
+    grid-area: 1 / 1 / span 1 / span 1;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(8, 1fr); 
+    padding-left: 5px;
+    text-align: center;
+    margin-right: 15px;
+    cursor: default;
+
+}
+
+ #asideIcon{
+    grid-area: 5 / 1 / span 2 / span 1; 
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 15px; 
+    
+ } 
+
+
+h4{
+    grid-area: 7 / 1 / span 1 / span 1;
+    color: yellow;
+    text-align: center;
+}
+
+strong{
+    color: yellow;
+}
+
+/*------------main section style---------------*/
+main{
+    grid-area: 2 / 1 / span 1 / span 1;
+    padding-top: 15px;
+    padding-left: 30px;
+    font-size: 26px;
+    font-weight: bold;
+}
+#content{
+    overflow: auto;
+}
+
+.newbgcolor{
+    background-color: rgba(114, 63, 63, 0.9);
+}
+
+main p{
+    margin: 5px;
+}
+
+.formDiv{
+    text-align: center;
+    justify-content: center;
+}
+
+.inputBox{
+    font-size: 15px;
+    padding: 7px;
+    margin-top: 25px;
+    border-radius: 15px;
+    width: 300px;
+}
+
+.buttonBox{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+hr{
+    width: 500px;
+    border: 2px solid rgb(172, 169, 169);
+}
+
+form h1{
+    float: none;
+    padding-top: 5px;
+    color: gray;  
+}
+
+.centerContent{
+    text-align: center;
+}
+
+.nonVisible{
+    display: none;
+}
+
+#welcomeDiv{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(175, 173, 173, 0.5);
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-size: 32px;
+}
+
+#welcometxt1{
+    margin-top: 18%;
+}
+
+#welcometxt2{
+    font-size: 12px;
+    margin-top: 20px;
+}

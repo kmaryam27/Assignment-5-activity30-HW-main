@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--********developer: Maryam Keshavarz****************-->
+    <!--reset all browsers style-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!--add 2 font for this document-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+    <!--my style .css file-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Awsome font-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>Employee manager app</title>
+  </head>
+  <body>
+      <aside>
+        <section id="asideIconSection">
+          <section id="asideIcon">
+              <i class="far fa-address-book fa-3x"></i>
+          </section>
+          <h4>SIMPLICITY</h4>
+        </section>
+          <section id="asideLinkSection">
+              <div id="print">print</div>
+              <div id="verify">verify</div>
+              <div id="lookup">lookup</div>
+              <div id="contains">contains</div>
+              <div id="update">update</div>
+              <div id="add">add</div>
+              <div id="delete">delete</div>
+              <div id="arrange">arrange</div>
+          </section>
+        </aside>
+        <div id="contentPage">
+    <div id="mainContent">
+      <div id="welcomeDiv">
+        <div id="welcometxt1">
+          WELCOME TO <strong>SIMPLICITY</strong>
+        </div>
+        <div id="welcometxt2">The Minimalists Directory.</div>
+      </div>
+      <header>
+        <h1>Employee Manager</h1>
+      </header>
+      <main id="mainPlace">
+        <!--**********************verify Header*************************-->
+        <div class="formDiv" id="verifyDiv">
+          <form>
+            <input class="inputBox" id="verifyInput" type="text">
+            <button class="buttonBox fas fa-user-check" id="verifySubmit" title="Verify">  Verify</button>
+            <hr/>
+          </form>
+        </div>
+        <!--************************lookup Header***********************-->
+        <div class="formDiv" id="lookupDiv">
+          <form>
+            <input class="inputBox" id="lookupInput" type="text">
+            <button class="buttonBox fas fa-search" id="lookupSubmit" title="Lookup">  Lookup</button>
+            <hr/>
+          </form>
+        </div>
+        <!--**************************contains Header*********************-->
+        <div class="formDiv" id="containsDiv">
+          <form>
+            <input class="inputBox" id="containsInput" type="text">
+            <button class="buttonBox fas fa-clipboard-check" id="containsSubmit" title="Contains">  Contains</button>
+            <hr/>
+          </form>
+        </div>
+        <!--**************************update Header*********************-->
+        <div class="formDiv" id="updateDiv">
+            <form>
+              <label>Name&nbsp &nbsp &nbsp &nbsp &nbsp</label>
+              <input class="inputBox" id="updateNameInput" type="text">
+              <br/>
+              <label>Number &nbsp &nbsp &nbsp</label>
+              <input class="inputBox" id="updateNumInput" type="text">
+              <br/>
+              <label>Phone &nbsp &nbsp &nbsp &nbsp</label>
+              <input class="inputBox" id="updatePhoneInput" type="text">
+              <br/>
+              <button class="buttonBox fas fa-user-edit" id="updateSubmit" title="Update">  Update</button>
+              <hr/>
+            </form>
+          </div>
+           <!--************************add Header***********************-->
+        <div class="formDiv" id="addDiv">
+          <form>
+            <label>Name&nbsp &nbsp &nbsp &nbsp &nbsp</label>
+            <input class="inputBox" id="addNameInput" type="text">
+            <br/>
+            <label>Number &nbsp &nbsp &nbsp</label>
+            <input class="inputBox" id="addNumInput" type="text">
+            <br/>
+            <label>Phone &nbsp &nbsp &nbsp &nbsp</label>
+            <input class="inputBox" id="addPhoneInput" type="text">
+            <br/>
+            <button class="buttonBox fas fa-user-plus" id="addSubmit" title="Add">  Add</button>
+            <hr/>
+          </form>
+        </div>
+        <!--************************delete Header***********************-->
+        <div class="formDiv" id="deleteDiv">
+          <form>
+            <input class="inputBox" id="deleteInput" type="text">
+            <button class="buttonBox fas fa-user-minus" id="deleteSubmit" title="Delete">  Delete</button>
+            <hr/>
+          </form>
+        </div>
+        <!--**************************arrange Header*********************-->
+        <div class="formDiv" id="arrangeDiv">
+          <form>
+              <select class="inputBox" id="arrangeCombo">
+                  <option value="0" id="arrangeNameInput">Name</option>
+                  <option value="1" id="arrangeNumInput">Number</option>
+                </select>
+            <button class="buttonBox fas fa-users-cog" id="arrangeSubmit" title="Arrange">  Arrange</button>
+            <hr/>
+          </form>
+        </div>
+        <!--**************************result content******************************-->
+        <div id="content"></div>
+      </main>
+    </div>
+  </div>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/dom.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
